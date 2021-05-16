@@ -7,7 +7,7 @@ function Banner() {
             className="banner"
             style={{
                 backgroundSize: 'cover',
-                backgroundImage: `url("https://image.freepik.com/free-vector/abstract-dotted-banner-background_1035-18160.jpg")`,
+                backgroundImage: `url(https://wealthlab.co/wp-content/uploads/2018/08/Netflix_logo.svg_.png)`,
                 backgroundPosition: 'center center',
             }}>
 
