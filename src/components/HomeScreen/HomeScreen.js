@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
+import Banner from '../Banner/Banner'
 import './HomeScreen.css'
 
 function HomeScreen() {
@@ -9,6 +10,7 @@ function HomeScreen() {
             <NavBar />
 
             {/* banner */}
+            <Banner />
 
             {/* rows  */}
         </div>
