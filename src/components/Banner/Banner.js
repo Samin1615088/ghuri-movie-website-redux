@@ -1,7 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import request from '../../adapters/Request';
+import axios from './../../adapters/axios';
 import './Banner.css';
 
 function Banner() {
+    const [movie, setMovie] = useState([]);
+
+    useEffect(() => {
+        // Want to use async/await? Add the `async` keyword to your outer function/method.
+        async function fetchData() {
+            try {
+                const response = await axios.get(request.fetchNetflixOriginals);
+                console.log(response);
+                setMovie(
+                    response.data?.results?.[
+                    Math.floor(Math.random() * 20)
+                    ]
+                )
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        fetchData();
+    }, [])
+    // console.log(movie)
 
     const truncate = (string, n) => {
         return string?.length > n ? string.substring(0, n - 1) + '...' : string;
@@ -12,19 +34,19 @@ function Banner() {
             className="banner"
             style={{
                 backgroundSize: 'cover',
-                backgroundImage: `url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeA8XKAAFZcBBuAAAAAElFTkSuQmCC)`,
+                backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path || ""})`,
                 // backgroundImage: `url(https://wealthlab.co/wp-content/uploads/2018/08/Netflix_logo.svg_.png)`,
                 backgroundPosition: 'center center',
             }}>
             <div className="banner_contents">
-                <h1 className="banner_title">This is test title</h1>
+                <h1 className="banner_title">{movie?.name}</h1>
                 <div className="banner_buttons">
                     <button className="banner_button">Play</button>
                     <button className="banner_button">My List</button>
                 </div>
                 <h1 className="banner_description">
                     {
-                        truncate("This is a test description This is a test description This is a test description This is a test description This is a test description This is a test description This is a test description This is a test description This is a test description This is a test description", 150)
+                        truncate(movie?.overview, 150)
                     }
                 </h1>
             </div>
