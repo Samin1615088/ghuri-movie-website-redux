@@ -21,12 +21,13 @@
 }
 
 .navBar_black {
-  background: #111;
+  /* background: #111; */
+  background: tomato;
 }
 
 .nav_logo {
   position: fixed;
-  left: 0px;
+  left: 20px;
   top: 10px;
   padding-left: 10px;
   width: 200px;
