@@ -36,7 +36,7 @@ function Banner() {
                 backgroundSize: 'cover',
                 backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path || ""})`,
                 // backgroundImage: `url(https://wealthlab.co/wp-content/uploads/2018/08/Netflix_logo.svg_.png)`,
-                backgroundPosition: 'center center',
+                backgroundPosition: 'top center',
             }}>
             <div className="banner_contents">
                 <h1 className="banner_title">{movie?.name}</h1>
@@ -44,6 +44,9 @@ function Banner() {
                     <button className="banner_button">Play</button>
                     <button className="banner_button">My List</button>
                 </div>
+
+                <div className="banner--fadeBottom"></div>
+
                 <h1 className="banner_description">
                     {
                         truncate(movie?.overview, 150)

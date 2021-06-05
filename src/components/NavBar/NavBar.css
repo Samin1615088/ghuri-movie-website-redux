@@ -7,7 +7,7 @@
   left: 0;
   padding: 20px;
   width: 100%;
-  height: 30px;
+  height: 60px;
   z-index: 1;
 
   /* animation */
@@ -17,7 +17,6 @@
 
 .nav_content {
   display: flex;
-  height: 100%;
   justify-content: space-between;
 }
 
@@ -25,19 +24,20 @@
   background: #111;
 }
 
-.img_logo {
+.nav_logo {
   position: fixed;
-  left: 20px;
+  left: 0px;
   top: 10px;
+  padding-left: 10px;
   width: 80px;
   object-fit: contain;
   cursor: pointer;
 }
 
-.img_avatar {
+.nav_avatar {
   position: fixed;
   right: 20px;
   width: 30px;
-  /* object-fit: contain; */
+  object-fit: contain;
   cursor: pointer;
 }
