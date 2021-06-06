@@ -6,14 +6,14 @@
 }
 
 .banner_contents {
-  margin-left: 30px;
+  margin-left: 50px;
   padding-top: 140px;
   height: 190px;
 }
 .banner_title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
 }
 .banner_description {
   /* width: 45rem; */
@@ -23,6 +23,7 @@
   font-weight: 400;
   max-width: 360px;
   height: 80px;
+  z-index: 100;
 }
 .banner--fadeBottom {
   position: absolute;

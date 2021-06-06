@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Typewriter from 'typewriter-effect';
 import request from '../../adapters/Request';
 import axios from './../../adapters/axios';
 import './Banner.css';
@@ -48,12 +49,21 @@ function Banner() {
                 <div className="banner--fadeBottom"></div>
 
                 <h1 className="banner_description">
-                    {
-                        truncate(movie?.overview, 150)
-                    }
+
+                    <Typewriter
+                        options={{
+                            strings: [truncate(movie?.overview, 150)],
+                            autoStart: true,
+                            loop: true,
+                            delay: 30,
+                            skipAddStyles: true,
+                            pauseFor: 10000,
+                            deleteSpeed:10
+                        }}
+                    />
                 </h1>
+
             </div>
-            {/* <div className="banner_fadeBottom" /> */}
 
         </header>
     )

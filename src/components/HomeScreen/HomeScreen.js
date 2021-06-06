@@ -17,7 +17,7 @@ function HomeScreen() {
             {/* rows  */}
 
             <Row
-                title="BanglaFlix Special"
+                title="Cinema Mela Special"
                 fetchUrl={request.fetchTrending}
                 isLargeRow={true}
             />
