@@ -49,7 +49,6 @@ function Banner() {
                 <div className="banner--fadeBottom"></div>
 
                 <h1 className="banner_description">
-
                     <Typewriter
                         options={{
                             strings: [truncate(movie?.overview, 150)],

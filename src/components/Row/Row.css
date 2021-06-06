@@ -9,6 +9,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 20px;
+    
 }
 .row__posters::-webkit-scrollbar{
     display: none;
@@ -19,6 +20,7 @@
     object-fit: contain;
     margin-right: 10px;
     width: 100%;
+    border: 2px solid red;
     transition: transform 350ms;
 }
 .row__poster:hover {
