@@ -23,7 +23,7 @@ function NavBar() {
     }, [])
 
     return (
-        <div className={`navBar ${show && 'navBar_black'}`}>
+        <div className={`navBar ${show && 'navBar_color'}`}>
             <div className="nav_content">
                 <img 
                 className="nav_logo" 

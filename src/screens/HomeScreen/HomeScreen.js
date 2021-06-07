@@ -27,7 +27,7 @@ function HomeScreen() {
                 fetchUrl={request.fetchTrending}
             />
 
-            {/* <Row
+           <Row
                 title="Comedy Movies"
                 fetchUrl={request.fetchComedyMovies}
             />
@@ -43,7 +43,7 @@ function HomeScreen() {
             <Row
                 title="Documentaries"
                 fetchUrl={request.fetchDocumentaries}
-            /> */}
+            /> 
         </div>
     )
 }

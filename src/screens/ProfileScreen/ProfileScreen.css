@@ -1,3 +1,105 @@
-.profileScreen > h1 {
-  color: red;
+.profileScreen {
+  color: white;
+}
+
+hr {
+  border: 1px solid #282c2d;
+}
+.profileScreen__body {
+  max-width: 700px;
+  margin: 10% auto;
+}
+
+.profileScreen__body > h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.profileScreen__info {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding-top: 20px;
+}
+
+.profileScreen__col-1 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.profileScreen__col-1 > img {
+  width: 100px;
+  background: red;
+}
+
+.profileScreen__col-2 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.profileScreen__details > input {
+  width: 100%;
+  padding: 12px 20px;
+  color: white;
+  background-color: gray;
+  border: none;
+}
+
+.profileScreen__details > h3 {
+  margin: 10px 0 5px 0;
+}
+.profileScreen__details > h4 {
+  margin: 10px 0 0 0;
+  color: rgb(187, 187, 187);
+}
+
+.profileScreen__allPackages {
+  margin-top: 20px;
+}
+
+.profileScreen__package {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.profileScreen__button {
+  padding: 0px 30px;
+  border: none;
+
+  background-color: #e50914;
+  color: white;
+  font-weight: 400;
+
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.profileScreen__button:hover {
+  background-color: #ee5960;
+}
+.button--active {
+  background-color: gray;
+}
+.button--active:hover {
+  background-color: gray;
+}
+.profileScreen__signout{
+  width: 100%;
+  padding: 10px 30px;
+  border: none;
+  
+  background-color: #e50914;
+  color: white;
+  font-weight: 400;
+  
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+.profileScreen__signout:hover{
+  background-color: #ee5960;
 }
