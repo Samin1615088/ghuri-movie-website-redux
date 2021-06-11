@@ -13,11 +13,24 @@ This is a website of movies where user needs to be authenticated to see the upco
 <br/>
 
 Frontend github: [Code Link](https://github.com/Samin1615088/ghuri-movie-website-redux)
+
+## Technologies Used For 
+
+### Frontend
+`REACT ROUTER`  `RAW CSS`  `REACT FORM HOOK`  `USECONTEXT HOOK`  `USESTATE HOOK`  `FONT AWESOME` `REDUX` 
+
+
+###  Backend
+`FIREBASE DATABASE` `FIREBASE AUTHENTICATION`  `FIREBASE HOSTING`
+
+
+## Screenshots 
+
 ### :point_down: Home page: 
 <img src="src/images/screenshots/home_webview.jpg" width="600px" />
 
 ### :point_down: Subscription page: 
-<img src="src/images/screenshots/email_webview.png" width="600px" />
+<img src="src/images/screenshots/eamil_webview.png" width="600px" />
 
 ### :point_down: Login page: 
 <img src="src/images/screenshots/login_webview.png" width="600px" />
@@ -29,11 +42,4 @@ Frontend github: [Code Link](https://github.com/Samin1615088/ghuri-movie-website
 <img src="src/images/screenshots/home_mobileview.png" width="200px" /> 
 
 
-## Technologies Used For 
 
-### Frontend
-`REACT ROUTER`  `RAW CSS`  `REACT FORM HOOK`  `USECONTEXT HOOK`  `USESTATE HOOK`  `FONT AWESOME` `REDUX` 
-
-
-###  Backend
-`FIREBASE DATABASE` `FIREBASE AUTHENTICATION`  `FIREBASE HOSTING`
